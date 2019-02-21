@@ -2,7 +2,7 @@
 
 General snippets of code I thought were interesting
 
-#### Publication filters
+### Publication filters
 
 [Date filters](https://github.com/bradster45/general-snippets/blob/master/datetime_filters.py) are some useful examples of filtering using Django's DateTimeField. Examples include:
 - Total count and count per day of objects from a provided date until the current date
@@ -10,17 +10,17 @@ General snippets of code I thought were interesting
 - Number of objects published per date from a set number of days ago to the current date
 - Number of objects published per day from a set number of days ago to the current date
 
-#### Newsletter engine
+### Newsletter engine
 
 [Newsletter engine](https://github.com/bradster45/general-snippets/tree/master/newsletter_celery) built with Python, using celery to queue periodic jobs.
 
-#### Google recaptcha implimentation
+### Google recaptcha implimentation
 
 [Recaptcha](https://github.com/bradster45/general-snippets/blob/master/recaptcha.py) is how you can authenticate a user in a form using python requests and google recaptcha.
 
-#### Race simulation is JS
+### Race simulation is JS
 
-[race_simulator](https://github.com/bradster45/general-snippets/blob/master/race_simulation/race_reshuffle_demo.html) randomly generates lap times one by one and reshuffles a table of racers accordingly. Lap times are randomly generated until the final lap, at which point we see the final finish positions. See demo below.
+[Race simulator](https://github.com/bradster45/general-snippets/blob/master/race_simulation/race_reshuffle_demo.html) randomly generates lap times one by one and reshuffles a table of racers accordingly. Lap times are randomly generated until the final lap, at which point we see the final finish positions. See demo below.
 
 ![start](https://github.com/bradster45/general-snippets/blob/master/race_simulation/start.png)
 
