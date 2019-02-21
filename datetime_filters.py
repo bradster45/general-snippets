@@ -1,3 +1,5 @@
+# some useful Django queryset filtering using a datatime field
+
 import datetime
 
 from myapp.models import MyModel
@@ -80,4 +82,5 @@ for x in range(7):
     # Thurs: 11
     # Fri: 5
     # Sat: 0
+
 
