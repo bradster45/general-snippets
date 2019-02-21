@@ -1,4 +1,4 @@
-BROKER_URL = 'redis_stuff'  # currently 0, 1 are used by bittech
+BROKER_URL = 'redis_stuff'
 BROKER_TRANSPORT_OPTIONS = {'visibility_timeout': 3600}  # 1 hour.
 CELERY_RESULT_BACKEND = 'redis_stuff'  # same as BROKER_URL
 CELERY_ACCEPT_CONTENT = ['json']
