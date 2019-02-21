@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reshuffle demo</title>
+    <style>
+        table{
+            width: 600px !important;
+            margin: 0 auto;
+        }
+
+        .racer td{
+            background:#f2f2f2;
+            border:1px solid #ccc;
+            padding:10px;
+        }
+
+        thead{
+            display:none;
+        }
+    </style>
+    <link rel="stylesheet" media="all" href="http://www.kurtpreston.com/assets/application-acac59c55f10ec80eec100db73d1d9de9b603beb33f8c10383cb16ab271b4a4e.css" />
+</head>
+<body>
+    <table class="racers">
+        <thead>
+            <tr>
+                <th>Racer name</th>
+                <th class="sortAsc">Total time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="racer" id="racer_1" data-total-time="0">
+                <td>Racer 1</td>
+                <td class="total-time">0</td>
+            </tr>
+            <tr class="racer" id="racer_2" data-total-time="0">
+                <td>Racer 2</td>
+                <td class="total-time">0</td>
+            </tr>
+            <tr class="racer" id="racer_3" data-total-time="0">
+                <td>Racer 3</td>
+                <td class="total-time">0</td>
+            </tr>
+            <tr class="racer" id="racer_4" data-total-time="0">
+                <td>Racer 4</td>
+                <td class="total-time">0</td>
+            </tr>
+            <tr class="racer" id="racer_5" data-total-time="0">
+                <td>Racer 5</td>
+                <td class="total-time">0</td>
+            </tr>
+            <tr class="racer" id="racer_6" data-total-time="0">
+                <td>Racer 6</td>
+                <td class="total-time">0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="http://www.kurtpreston.com/assets/projects/isortope-3ca09417ff7d201703d53b3d0972a9a61139400b97ddfecfcec74b0a92bf8af3.js"></script>
+<script>
+
+
+    // initialize table sorting plugin
+    $('table.racers').isortope();
+    var lap_number = 0;
+    var total_laps = 60;
+    
+    // every x seconds:
+    var check = function () {
+        if (lap_number < total_laps) {
+            rearrange_racers();
+            lap_number += 1
+            setTimeout(check, 1000); // check again in x
+        }
+    }
+
+    setTimeout(check, 1000);
+
+    // rearrange racers based on total time
+    function rearrange_racers(){
+
+        // two parts, calculate new total_time, then rearrange accordingly
+        $('tr.racer').each(function(index, value){
+            total_time = (parseFloat($(value).attr('data-total-time')) + parseFloat((Math.random() * 10) + 90));
+            $(value).attr('data-total-time', total_time.toFixed(2));
+            $(value).find('td.total-time').text(total_time.toFixed(2));
+        });
+        $('table.racers').isortope('resort');
+    };
+</script>
+</html>
