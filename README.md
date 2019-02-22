@@ -2,6 +2,14 @@
 
 General snippets of code I thought were interesting
 
+Contents:
+- [Publication filters](https://github.com/bradster45/general-snippets/#publication-filters)
+- [Newsletter engine](https://github.com/bradster45/general-snippets/#newsletter-engine)
+- [Google recaptcha implimentation](https://github.com/bradster45/general-snippets/#google-recaptcha-implimentation)
+- [Race simulation is JS](https://github.com/bradster45/general-snippets/#race-simulation-is-js)
+- [Tracking links](https://github.com/bradster45/general-snippets/blob/master/datetime_filters.py)
+- [Abstract models](https://github.com/bradster45/general-snippets/blob/master/datetime_filters.py)
+
 ### Publication filters
 
 [Date filters](https://github.com/bradster45/general-snippets/blob/master/datetime_filters.py) are some useful examples of filtering using Django's DateTimeField. Examples include:
@@ -27,3 +35,7 @@ General snippets of code I thought were interesting
 ![end](https://github.com/bradster45/general-snippets/blob/master/race_simulation/end.png)
 
 Well done to racer 5.
+
+### Tracking links
+
+### Abstract models
