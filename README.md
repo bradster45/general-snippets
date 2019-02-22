@@ -38,4 +38,9 @@ Well done to racer 5.
 
 ### Tracking links
 
+Simple model to create a link that redirects to a provided link, and counts the number of times it does so.
+See the [Models](https://github.com/bradster45/general-snippets/blob/master/tracking_links/models.py), [Urls](https://github.com/bradster45/general-snippets/blob/master/tracking_links/urls.py) and [Views](https://github.com/bradster45/general-snippets/blob/master/tracking_links/views.py).
+
 ### Abstract models
+
+Using abstract models, you can inherit fields and behaviours from other models. I've written up examples of abstract models used to provide title, and auto slug fields, as well as tracking created/updated datetimes. There's also an example of how to track which user has created/updated a Django model. See examples [here](https://github.com/bradster45/general-snippets/blob/master/abstract_models.py).
