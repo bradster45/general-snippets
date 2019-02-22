@@ -7,8 +7,8 @@ Contents:
 - [Newsletter engine](https://github.com/bradster45/general-snippets/#newsletter-engine)
 - [Google recaptcha implimentation](https://github.com/bradster45/general-snippets/#google-recaptcha-implimentation)
 - [Race simulation is JS](https://github.com/bradster45/general-snippets/#race-simulation-is-js)
-- [Tracking links](https://github.com/bradster45/general-snippets/blob/master/datetime_filters.py)
-- [Abstract models](https://github.com/bradster45/general-snippets/blob/master/datetime_filters.py)
+- [Tracking links](https://github.com/bradster45/general-snippets/#tracking-links)
+- [Abstract models](https://github.com/bradster45/general-snippets/#abstract-models)
 
 ### Publication filters
 
